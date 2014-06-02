@@ -1,0 +1,16 @@
+.hdr-icon {
+  width: 100px;
+}
+
+/*  This stuff is for packery, which is used for the wall of fame.*/
+.item {
+  width: 10%;
+  border: black solid 1px;
+  /*border-radius: 6px;*/
+}
+.item.w2 {
+  width: 20%;
+}
+.item.w3 {
+  width: 30%;
+}
