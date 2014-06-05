@@ -1,22 +1,44 @@
 $(function () {
   $.each(challenges, function (index, value) {
+    var thumbAlbumId = 'thumb' + index;
+
     var row = '<div class="row">';
     row += '<div class="col-md-4">';
-    row += buildThumbGallery(value);
+    row += '<div id="' + thumbAlbumId + '">';
+    row += '</div>';
     row += '</div>';
     row += '<div class="col-md-8">';
     row += buildMetaSummary(value);
     row += '</div>';
     row += '</div>';
     $('.current').append(row);
+
+    buildThumbGallery(thumbAlbumId, value);
   });
 });
 
 // func: buildThumbGallery
-// args: a challenge summary object
+// args: the ID of the div in which the album should be placed.
+//       a challenge summary object
 // rval: a string of HTML to insert into a bootstrap .col
-function buildThumbGallery (challenge) {
-  return '<img src="' + challenge.photos[0] + '" class="img-responsive" alt="no meta">';
+function buildThumbGallery (thumbAlbumId, challenge) {
+  console.log('building packery for id ' + thumbAlbumId);
+  var $album = $('#' + thumbAlbumId);
+
+  var pckry = $album.packery({
+    itemSelector: '.item',
+    gutter: 2,
+    // isHorizontal: true
+  });
+
+  $.each(challenge.photos, function (index, value) {
+    console.log('adding to thumb album: ' + value);
+    addImageToAlbum($album, value, images[value]);
+  });
+
+  $(window).load(function () {
+    $album.packery('layout');
+  });
 }
 
 // func: buildMetaSummary
