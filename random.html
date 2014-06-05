@@ -11,7 +11,9 @@
     <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
 
     <link rel="stylesheet" type="text/css" href="css/main.css">
+    <script type="text/javascript" src="db/meta.js"></script>
     <script type="text/javascript" src="js/common.js"></script>
+    <script type="text/javascript" src="js/random.js"></script>
   </head>
 
   <body>
@@ -22,7 +24,7 @@
     <div class="container random">
       <div class="row">
         <div class="col-md-6">
-          <img src="db/1443011_80433119.jpg" class="img-responsive" alt="random image">
+          <img id="img-src" class="img-responsive">
         </div> <!-- col -->
         <div class="col-md-6">
           <div class="row">
@@ -30,7 +32,7 @@
               <p>Funny:</p>
             </div>
             <div class="col-md-8">
-              <p>Rating</p>
+              <p id="rtg-funny"></p>
             </div>
           </div> <!-- row -->
           <div class="row">
@@ -38,7 +40,7 @@
               <p>Creative:</p>
             </div>
             <div class="col-md-8">
-              <p>Rating</p>
+              <p id="rtg-creative"></p>
             </div>
           </div> <!-- row -->
           <div class="row">
@@ -46,7 +48,7 @@
               <p>Amazing:</p>
             </div>
             <div class="col-md-8">
-              <p>Rating</p>
+              <p id="rtg-creative"></p>
             </div>
           </div> <!-- row -->
           <div class="row">
@@ -54,13 +56,13 @@
               <p>Overall:</p>
             </div>
             <div class="col-md-8">
-              <p>Rating</p>
+              <p id="rtg-overall"></p>
             </div>
           </div> <!-- row -->
         </div> <!-- col -->
       </div> <!-- row -->
-      <p>Created by user on 13 March in Hong Kong.</p>
-      <p>This is the caption that was typed in by the user when the photo was submitted.</p>
+      <p>Created by <span id="img-owner"></span> on <span id="img-date"></span> in <span id="img-location"></span>.</p>
+      <p id="img-description"></p>
     </div> <!-- container higlights -->
 
     <div id="footer"></div>
