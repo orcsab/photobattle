@@ -1,16 +1,12 @@
 $(function () {
   console.log('instantiating packery');
   var $container = $('#walloffame');
-  var pckry = $container.packery({
-    itemSelector: '.item',
-    gutter: 5,
-    // isHorizontal: true
-  });
+  var album = new Album($container);
 
   // hints from http://codepen.io/desandro/pen/mjcGq
   console.log('adding images to container');
   $.each(images, function (key, value) {
-    addImageToAlbum($container, key, value);
+    album.addImage(key, value);
   });
 
   $(window).load(function () {
