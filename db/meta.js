@@ -58,7 +58,61 @@ var images = {
     owner: 'unknown',
     date: '13 march 2014',
     description: 'this is a photo of some stuff'
-  }
+  },
+ 'db/IMG_20140606_162141.jpg': {
+    rating: {funny: 3, creative: 5, amazing: 7, overall: 5},
+    owner: 'unknown',
+    date: '13 march 2014',
+    description: 'this is a photo of some stuff'
+  },
+  'db/IMG_20140606_162147.jpg': {
+    rating: {funny: 3, creative: 5, amazing: 7, overall: 5},
+    owner: 'unknown',
+    date: '13 march 2014',
+    description: 'this is a photo of some stuff'
+  },
+  'db/IMG_20140606_201834.jpg': {
+    rating: {funny: 3, creative: 5, amazing: 7, overall: 5},
+    owner: 'unknown',
+    date: '13 march 2014',
+    description: 'this is a photo of some stuff'
+  },
+  'db/IMG_20140607_100454.jpg': {
+    rating: {funny: 3, creative: 5, amazing: 7, overall: 5},
+    owner: 'unknown',
+    date: '13 march 2014',
+    description: 'this is a photo of some stuff'
+  },
+  'db/IMG_20140607_103325.jpg': {
+    rating: {funny: 3, creative: 5, amazing: 7, overall: 5},
+    owner: 'unknown',
+    date: '13 march 2014',
+    description: 'this is a photo of some stuff'
+  },
+  'db/IMG_20140607_104241.jpg': {
+    rating: {funny: 3, creative: 5, amazing: 7, overall: 5},
+    owner: 'unknown',
+    date: '13 march 2014',
+    description: 'this is a photo of some stuff'
+  },
+  'db/IMG_20140607_191737.jpg': {
+    rating: {funny: 3, creative: 5, amazing: 7, overall: 5},
+    owner: 'unknown',
+    date: '13 march 2014',
+    description: 'this is a photo of some stuff'
+  },
+  'db/IMG_20140608_163353.jpg': {
+    rating: {funny: 3, creative: 5, amazing: 7, overall: 5},
+    owner: 'unknown',
+    date: '13 march 2014',
+    description: 'this is a photo of some stuff'
+  },
+  'db/IMG_20140608_163356.jpg': {
+    rating: {funny: 3, creative: 5, amazing: 7, overall: 5},
+    owner: 'unknown',
+    date: '13 march 2014',
+    description: 'this is a photo of some stuff'
+  },
 };
 
 var challenges = [
