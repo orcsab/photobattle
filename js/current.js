@@ -72,6 +72,7 @@ function registerMouseActivities(index, id) {
   console.log('registering mouse for ' + id);
   $('#' + id).on('click', function() {
     console.log('captured click on ' + id);
+    window.location = 'challenge.html?index=' + index;
   });
 
   $('#' + id).on('mouseenter', function() {
