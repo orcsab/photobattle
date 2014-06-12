@@ -14,9 +14,11 @@ $(function () {
 //  note: this function will append a bootstrap 'row' to the my-photos
 //        container.
 function addPhotoRow (loc, meta) {
-  var html = '<div class="row">';
+  var html = '';
+  html += '<hr>';
+  html += '<div class="row">';
   html += '<div class="col-sm-4">';
-  html += '<img src="' + loc + '" class="img-responsive" alt="' + meta.description + '">';
+  html += '<img src="' + loc + '" class="img-responsive img-rounded" alt="' + meta.description + '">';
   html += '</div>';
   html += '<div class="col-sm-8">';
   html += '<p><em>Description:</em> ' + meta.description + '</p>';
