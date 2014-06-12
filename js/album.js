@@ -1,13 +1,12 @@
 function Album ($container) {
-  $container.css('height', '401px');
-  $container.css('width', '1001px');
+  // $container.css('height', '500px');
+  // $container.css('width', 'auto');
 
   this.$packery = $container.packery({
     itemSelector: '.item',
-    gutter: -5,
-    isHorizontal: true,
+    gutter: 5,
+    // isHorizontal: true,
   });
-  // this.$packery = $container;
 }
 
 // func: addImage
@@ -29,4 +28,15 @@ Album.prototype.addImage = function (file, meta) {
   items += '</div>';
   var $items = $(items);
   this.$packery.append($items).packery('appended', $items);
+}
+
+// func: layout
+// args: none
+// rval: none
+// note: layout the contents of the album
+Album.prototype.layout = function () {
+  //  for posterity: this two lines are equivalent
+  // this.$packery.data('packery').layout();
+  this.$packery.packery('layout');
+
 }

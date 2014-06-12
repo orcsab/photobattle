@@ -14,3 +14,19 @@
 .item.w3 {
   width: 30%;
 }
+
+.current h2 {
+  text-align: center;
+}
+
+.current hr {
+  margin: 0px;
+}
+
+.current .row {
+  padding-top: 10px;
+}
+
+.current-highlight {
+  background-color: #F3FAFF;
+}

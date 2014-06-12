@@ -11,6 +11,6 @@ $(function () {
 
   $(window).load(function () {
     console.log("window loaded");
-    $container.packery('layout');
+    album.layout();
   });
 });
