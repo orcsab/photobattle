@@ -4,7 +4,7 @@ $(function () {
     keys.push(k);
   console.log('keys = ' + keys);
   console.log('keys length = ' + keys.length);
-  var i = Math.floor ((Math.random * keys.length) + 1);
+  var i = Math.floor (Math.random() * keys.length);
   console.log('selecting key ' + i);
   var key = keys[i];
 
