@@ -24,7 +24,9 @@ Album.prototype.addImage = function (file, meta) {
     size = 'w2';
 
   var items = '<div class="item '+ size + '" style="position: relative; left: 0; top: 0;">';
+  items += '<a href="#" id="' + file + '" class="img-popup">';
   items += '<img src="' + file + '" style="position: relative; top: 0; left: 0; max-width: 100%; height: auto;" >';
+  items += '</a>';
   items += '</div>';
   var $items = $(items);
   this.$packery.append($items).packery('appended', $items);
